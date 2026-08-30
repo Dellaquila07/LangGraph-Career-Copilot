@@ -1,0 +1,10 @@
+dotenv
+fastapi
+langgraph
+langchain
+langchain-core
+langchain-community
+langgraph-checkpoint-postgres
+uvicorn[standard]
+psycopg[binary]
+langchain-groq
