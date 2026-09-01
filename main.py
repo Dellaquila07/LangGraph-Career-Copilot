@@ -26,7 +26,7 @@ async def post(req: MessageRequest, request: Request):
 
     result = await request.app.state.compiled_graph.ainvoke(
         {"messages": [{"role": "user", "content": req.message }]},
-        config=config,
+        config=config
     )
  
     return { "response": result["messages"][-1].content }
